@@ -272,6 +272,20 @@ Playbooks: `INFRA_CICD.md`, `OBSERVABILITY_SRE.md`
 
 ---
 
+### 1L. LangChain Agent Orchestration Evaluation
+Status: 🔴 Owner: @tbd  
+Playbooks: `BACKEND_SERVICES.md`, `ARCHITECTURE.md`
+
+- [ ] **Proof of Concept**: Implement agent tool calling workflow (search→extract→normalize→rank) using LangGraph within existing agent service; compare performance vs current implementation (Owner) — Links: `BACKEND_SERVICES.md#agent`, `ARCHITECTURE.md#Integration-Spine`
+- [ ] **Observability Integration**: Add LangSmith tracing alongside OTEL for agent decision paths, token usage, and prompt performance metrics (Owner) — Links: `OBSERVABILITY_SRE.md`
+- [ ] **Performance Benchmark**: Measure latency impact against p95 ≤ 4s target; evaluate memory/CPU overhead in staging environment (Owner) — Links: `ARCHITECTURE.md#Non-Functional-Targets`
+- [ ] **Decision Documentation**: Create ADR documenting evaluation results, performance comparison, and recommendation for Phase 2 adoption (Owner)
+
+**Exit**
+- LangChain PoC demonstrates comparable performance and provides measurable benefits in agent observability/debugging; decision documented for Phase 2 planning.
+
+---
+
 ## Phase 2 — Coverage, Reliability, & Returns (weeks 10–20)
 
 > **Goal:** Expand merchant coverage, add Firmly & BigCommerce, returns/RMA, stronger fraud, data warehouse, and improve headless resilience.  

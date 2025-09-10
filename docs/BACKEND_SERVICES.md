@@ -4,7 +4,7 @@
 Modular, observable microservices for agent planning, discovery, normalization, ranking, checkout, orders, fraud, notifications.
 
 ## Services & Purpose
-- **agent**: plan tool calls; enforce guardrails; action ledger (replay)
+- **agent**: plan tool calls; enforce guardrails; action ledger (replay); *Phase 1 evaluation: LangGraph vs custom orchestration*
 - **discovery**: SERP + crawl; HTML → structured JSON via extractors
 - **normalize**: canonical product schema; taxonomy; dedupe
 - **offer**: score & rank (price, ship/tax, ETA, returns, trust); explainers
@@ -28,6 +28,7 @@ Modular, observable microservices for agent planning, discovery, normalization, 
 - **1A**: agent, discovery, normalize, offer (MVP paths, JSON schemas)
 - **1B**: checkout (API + deeplink), integrations: Violet + eBay + Shopify-per-store; payments issuing proxy
 - **1C**: orders (tracking via aggregator), notifications; allowlisted headless runner (demo sites)
+- **1D**: LangChain evaluation (PoC agent orchestration with LangGraph; performance benchmark vs custom implementation)
 
 ### Phase 2
 - **2A**: Integrations: Firmly; BigCommerce; connector webhooks
