@@ -1,0 +1,23 @@
+# Global owners
+* @team-leads
+
+# Frontend applications
+/apps/web/ @frontend-team
+/apps/mobile/ @mobile-team
+/platform/packages/ui/ @frontend-team
+
+# Backend services
+/services/ @backend-team
+/apps/bff/ @backend-team
+
+# Infrastructure
+/infra/ @devops-team
+/.github/ @devops-team
+
+# Platform foundations
+/platform/data/ @data-team
+/platform/observability/ @sre-team
+/platform/security/ @security-team
+
+# Documentation
+/docs/ @team-leads
