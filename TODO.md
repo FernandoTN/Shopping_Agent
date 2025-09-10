@@ -487,15 +487,37 @@ Status: 🔴 Owner: @tbd
 
 ### Definition of Done (per sub‑phase)
 - ✅ Code + tests merged and green in CI (unit/contract/E2E as applicable)  
-- ✅ Documentation updated (relevant playbook + ADR if design changes)  
+- ✅ **Documentation updated** (all relevant files):
+  - Update `TODO.md` with progress/status changes
+  - Update `HISTORY.md` with session changes before committing
+  - Update relevant `docs/*.md` playbooks with any design/interface changes
+  - Add ADR (Architecture Decision Record) if design changes made
 - ✅ Dashboards/alerts created where relevant  
 - ✅ Security checks passed (SAST/DAST, secrets scan)  
 - ✅ Runbooks updated (if user‑visible or ops‑impacting)
+
+### Documentation Maintenance Workflow
+**CRITICAL**: Before any commit, ensure all documentation is updated:
+
+1. **TODO.md**: Update task statuses (🔴→🟡→🟢), mark completed items, add new discovered tasks
+2. **HISTORY.md**: Document all changes made in current session with timestamp and summary
+3. **docs/*.md**: Update relevant playbooks if interfaces, designs, or architecture changed
+4. **ADRs**: Create Architecture Decision Records for significant design decisions
+
+**Example commit flow**:
+```bash
+# 1. Make code changes
+# 2. Update TODO.md status 
+# 3. Document changes in HISTORY.md
+# 4. Update relevant docs/*.md files
+# 5. Commit with human-style message (no AI attribution)
+```
 
 ### Release Gates
 - SLO burn < threshold in staging for 24–48h  
 - Canary metrics healthy; synthetic journeys pass  
 - No P0/P1 open issues on milestone
+- **All documentation updated per workflow above**
 
 ### Risk Register (rolling)
 - **Connector drift** → nightly contract tests; sandbox smoke tests  
