@@ -70,4 +70,6 @@ This project follows strict development standards with:
 
 ## License
 
-[License details to be added]
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License - see the [LICENSE](LICENSE) file for details.
+
+You are free to use, modify, and distribute this project for non-commercial purposes with proper attribution.
